@@ -1,0 +1,271 @@
+{% extends "blog/base.html"%} {% block content %}
+
+
+<h1>Data Visualisation using Plotly</h1>
+<hr>
+<p><i>Note: IMDb data on 1st January 2020.</i></p>
+
+<!-- Data Visualisation 1 -->
+<h4>Rating of Each Episode</h4>
+<br>
+<div>
+    <a href="https://plotly.com/~micha-lynn/1/?share_key=6vPiTYSbS6l7yASYa6dBL9" target="_blank" title="Rating of Each Episode" style="display: block; text-align: center;"><img src="https://plotly.com/~micha-lynn/1.png?share_key=6vPiTYSbS6l7yASYa6dBL9" alt="Rating of Each Episode" style="max-width: 100%;width: 600px;" width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="micha-lynn:1" sharekey-plotly="6vPiTYSbS6l7yASYa6dBL9" src="https://plotly.com/embed.js" async></script>
+</div>
+
+
+<p>The bar graph shows the user ratings (weighted average) of the Start-Up drama by episode. There are a total of 16 episodes in the drama. The x-axis shows the episode of the drama while the y-axis shows the rating. Rating one means bad whereas, ten means
+    excellent. Based on the graph, the weighted average rating shows declining trend by episode. Overall, the first episode has the highest weighted average rating while the final episode has the lowest rating with weighted average rating of 9.0 and 6.2
+    respectively.
+</p>
+
+<!-- Data Visualisation 2 -->
+<h4>Rating vs Total Votes</h4>
+<br>
+<div>
+    <a href="https://plotly.com/~micha-lynn/4/?share_key=CByVuHsSAMHzaorp6V5XKf" target="_blank" title="Overall Ratings" style="display: block; text-align: center;"><img src="https://plotly.com/~micha-lynn/4.png?share_key=CByVuHsSAMHzaorp6V5XKf" alt="Overall Ratings" style="max-width: 100%;width: 600px;" width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="micha-lynn:4" sharekey-plotly="CByVuHsSAMHzaorp6V5XKf" src="https://plotly.com/embed.js" async></script>
+</div>
+
+
+<p>The histogram graph shows the user ratings of the Start-Up drama. The x-axis shows the number of votes while y-axis shows the rating from 1 to 10. Rating one means bad and ten means excellent. A total of 2,429 IMDb users has given a weighted average vote
+    of 8.2/10 for this drama. Overall, there were 992 IMDb users that rated the drama as excellent, while 217 of them voted as bad drama. The majority of the users find that this drama is an enjoyable to watch.
+</p>
+
+<!-- Data Visualisation 3 -->
+<h4>Rating by Demographic</h4>
+<br>
+<div>
+    <a href="https://plotly.com/~micha-lynn/6/?share_key=ZOS1hzDVGRW9lAvJ065Tvp" target="_blank" title="Rating by Demographic" style="display: block; text-align: center;"><img src="https://plotly.com/~micha-lynn/6.png?share_key=ZOS1hzDVGRW9lAvJ065Tvp" alt="Rating by Demographic" style="max-width: 100%;width: 600px;" width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="micha-lynn:6" sharekey-plotly="ZOS1hzDVGRW9lAvJ065Tvp" src="https://plotly.com/embed.js" async></script>
+</div>
+
+
+
+<p>The bar graph shows the user ratings of the Start-Up drama based on age and gender category. The x-axis shows different age categories starting from all age category, under 18 years old, 18 to 29 years old, 30 to 44 years old and 45 years old and above.
+    The x-axis also breaks down into three genders category which are both genders, male and female. The y-axis shows the rating from 1 to 10 where one means bad and ten means excellent.
+</p>
+<p> From all age categories, more female voted that the drama is quite interesting with a weighted average rating of 8.2 than the male, just slightly lower by 0.1. Under 18 years old category and age 18 to 29 years old, male viewers feels that this drama
+    is enjoyable with a weighted average rating of 9.0 and 8.2 respectively while female viewers has 8.5 and 8.1 weighted average rating for this drama. </p>
+<p> For viewers age 30 to 44 years old and above 45 years old, female viewers have rated the drama with 8.2 and 8.8 weighted average rating respectively. The male viewers rated 8.1 and 7.8 respectively. Overall, female viewers aged 45 years old and above
+    and male viewers under 18 years old has the highest weighted average rating for this drama with 8.8 and 9.0 weighted average rating respectively.
+</p>
+<br>
+<h1>Data Visualisation using WordCloud and Tri-gram</h1>
+<hr>
+
+<!-- Data Visualisation 4 -->
+<!-- Overview Analysis -->
+<h4>Overview Analysis</h4>
+<p></p>
+<p>As an overview of the drama, the WordCloud and tri-gram shows a very high level summary of what the viewers are expecting from the drama. Some keywords or similar words were repeating indicating the main essence of the drama such as the second male lead
+    and second lead syndrome, which appeared twice in this drama meaning that the second male lead is quite popular among the viewers. </p>
+
+<p>Other words which would give a rough idea would be want hjp happy and hjp happy ending, which could be that the viewers would want hjp to be happy or the drama would be having a happy ending. In the WordCloud, love triangle, first love, and let go are
+    also strong key indicators. Demo day and Samson tech could also be correlated with the tri-gram which also have a self driving car which could indicate a start-up scene given the title of the drama - “Start-Up”</p>
+
+<img src="/media/img_src/1a.PNG" alt="ops!" width="380" height="400">
+<p></p>
+<img src="/media/img_src/1b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/1c.png" alt="ops!" width="800" height="500">
+
+
+<p><br></p>
+
+<!-- Ep1 and Ep2 -->
+<h4>Episode 1 and 2 Analysis</h4>
+<p></p>
+<p>From the first and second episode, the second male lead syndrome was pretty prominent as well in the tri-grams and WordCloud. There were already viewers rooting for the second male lead in the beginning of the drama. There were also several mentions about
+    other popular Korean dramas such as Dr Romantic 2, Itaewon Class and Hotel Del Luna. There were also several mentions about Dalmi’s dad, older sister, and grandma.</p>
+
+<img src="/media/img_src/2a.PNG" alt="ops!" width="380" height="400">
+<p></p>
+<img src="/media/img_src/2b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/2c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+<!-- Ep3 and Ep4 -->
+<h4>Episode 3 and 4 Analysis</h4>
+<p></p>
+<p>In the following episode, there were several mentions about swinging, sand, dad and spread. Interestingly, there was also mention about “Cyrano de Bergerac” where originally was a play written in 1897. Start-Up is a drama which adapted this play. Based
+    on the WordCloud, there were already a lot of talks about both the male leads. There were also mentions about other famous dramas such as Dream High and Weightlifting Fairy which Dalmi and Dosan previously stared in.
+</p>
+
+<img src="/media/img_src/3a.PNG" alt="ops!" width="380" height="400">
+<p></p>
+<img src="/media/img_src/3b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/3c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+
+<!-- Ep5 -->
+<h4>Episode 5 Analysis</h4>
+<p></p>
+<p>In this episode was the hackathon scene where the teams had to present their ideas on the hackathon stage. Handwriting , edits, presentation and script were also highly mentioned. This was also when Dalmi competed with her sister who was living a richer
+    lifestyle after her mom divorced with her Dad. There were also some mentions about machine learning, forgery detection, and sandbox which was related to what the drama scene was portrayed around.</p>
+
+<img src="/media/img_src/4a.PNG" alt="ops!" width="380" height="400">
+<p></p>
+<img src="/media/img_src/4b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/4c.png" alt="ops!" width="800" height="500">
+
+
+<p><br></p>
+
+<!-- Ep6 -->
+<h4>Episode 6 Analysis</h4>
+<p></p>
+<p>A lot of viewers on Reddit were also discussing about when will the truth be told to Dalmi. There were also several mentions of Injae and her using her stepdad’s connection. In the WordCloud, there were also mentions of revenge, vision loss which was
+    not in the tri-grams.</p>
+
+<img src="/media/img_src/5a.PNG" alt="ops!" width="600" height="380">
+<p></p>
+<img src="/media/img_src/5aa.png" alt="ops!" width="220" height="300">
+<p></p>
+<img src="/media/img_src/5b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/5c.png" alt="ops!" width="800" height="500">
+
+
+<p><br></p>
+
+<!-- Ep7 -->
+<h4>Episode 7 Analysis</h4>
+<p></p>
+<p>Several mentions regarding the letter, old Dosan, prefers old Dosan, Dalmi choosing old, and 15 years ago were some very interesting to see where the drama was heading to which seemed that it was leaning towards #TeamGoodBoy. There were also mentions
+    about 2 days 1 night and also Moon Se Yoon and Se Yoon cameo.</p>
+
+<img src="/media/img_src/6a.PNG" alt="ops!" width="700" height="380">
+<p></p>
+<img src="/media/img_src/6b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/6c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+<!-- Ep8 -->
+<h4>Episode 8 Analysis</h4>
+<p></p>
+<p>Many mentions about pine nut noodle/pine nut kalguksu, make Dalmi happy, and Dalmi truth. Mentions of the letter of 15 years resurfaced as Dalmi recognises the writing of 'the old Dosan'.</p>
+
+<img src="/media/img_src/7a.PNG" alt="ops!" width="400" height="400">
+<p></p>
+<img src="/media/img_src/7b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/7c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+<!-- Ep9 -->
+<h4>Episode 9 Analysis</h4>
+<p></p>
+<p>The netizens’ mentions of relationship built lie is very relevant in this drama as it really was lies built upon lies: DS’s lie about the math olympiad, JP’s lie to DM, DS’s lie to DM. Low self-esteem was also mentioned as DS’s self-esteem could be seen
+    was pretty low throughout the whole drama. It was also challenged when his relationship with his parents got rocky. The netizens’ also mentioned about DM DS endgame which was also an advantage for #TeamGoodBoy as DM already found out the truth.</p>
+
+<img src="/media/img_src/8b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/8c.png" alt="ops!" width="800" height="500">
+
+
+<p><br></p>
+
+<!-- Ep10 -->
+<h4>Episode 10 Analysis</h4>
+<p></p>
+<p></p>
+
+<img src="/media/img_src/9b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/9c.png" alt="ops!" width="800" height="500">
+
+
+
+<p><br></p>
+
+<!-- Ep11 -->
+<h4>Episode 11 Analysis</h4>
+<p></p>
+<p>There were mentions about yongsan brother and yongsan revenge became more evident in this episode. There were a lot of mentions about hjp sport car, apartment, river facing apartment.
+</p>
+
+<img src="/media/img_src/10a.PNG" alt="ops!" width="530" height="370">
+<p></p>
+<img src="/media/img_src/10b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/10c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+<!-- Ep12 -->
+<h4>Episode 12 Analysis</h4>
+<p></p>
+<p>The episode were DS comes back to Korea after a 3 year time skip in the drama. Netizens were also speculating about ‘Dodal end game’ as seen in WordCloud.</p>
+
+<img src="/media/img_src/11b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/11c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+<!-- Ep13 -->
+<h4>Episode 13 Analysis</h4>
+<p></p>
+<p>Words about good ball coming way was regarding wise words given by AI speaker. Netizens at this time were speculating about JP’s happiness saying that it was an endgame.</p>
+
+<img src="/media/img_src/12a.PNG" alt="ops!" width="300" height="330">
+<p></p>
+<img src="/media/img_src/12b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/12c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+<!-- Ep14 -->
+<h4>Episode 14 Analysis</h4>
+<p></p>
+<p>Very small word in WordCloud stating clown makeup.</p>
+<p>DYK: Putting on clown makeup is actually a meme.</p>
+<p>This phrase is usually used to illustrate a person making an increasingly larger fool of himself by providing arguments which are deemed increasingly weak or illogical.
+</p>
+
+<img src="/media/img_src/13a.PNG" alt="ops!" width="340" height="380">
+<p></p>
+<img src="/media/img_src/13b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/13c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+<!-- Ep15 -->
+<h4>Episode 15 Analysis</h4>
+<p></p>
+<p>Talks about the male leads and saying that this is a unique, unusual and different male lead. There were also a lot of sympathetic appearances together with JP’s name in tri-gram.</p>
+
+<img src="/media/img_src/14a.PNG" alt="ops!" width="500" height="600">
+<p></p>
+<img src="/media/img_src/14b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/14c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+<!-- Ep16 -->
+<h4>Episode 16 Analysis</h4>
+<p></p>
+<p>Tear jerking: Grandma told JP to visit often and to come see her even when things are going well or unwell for him. This could indirectly correlate with ‘hjp happy ending’ in tri-gram where he came in to good terms with everybody and himself.</p>
+
+<img src="/media/img_src/15a.PNG" alt="ops!" width="280" height="280">
+<p></p>
+<img src="/media/img_src/15b.png" alt="ops!" width="500" height="300">
+<p></p>
+<img src="/media/img_src/15c.png" alt="ops!" width="800" height="500">
+
+<p><br></p>
+
+{% endblock content%}

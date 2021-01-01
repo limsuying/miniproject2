@@ -1,0 +1,115 @@
+{% extends "blog/base.html"%} {% block content %}
+
+
+<h1>About Page</h1>
+<hr>
+<h4>Scraping Start-Up Drama Ratings and Comments using Python</h4>
+<p><i>Note: Only for educational purpose.</i> </p>
+
+<p>by Michairyniza Richlellyn and Lim Suying (2020).</p>
+<br>
+<h5>Introduction</h5>
+<p>The ratings data were scraped from the official Internet Movie Database (IMDb) website. IMDb is one of the world’s most popular sources for movie, TV and celebrity content with more than 100 million unique visitors per month. IMDb has huge collection
+    of movies database that includes various details of movies along with different ratings and user reviews. This movie reviews affects everyone from audience, film critics to the production company.</p>
+
+<p>Meanwhile, the reviews data were scraped from the Reddit site. Reddit is a social news platform that allows users to discuss and vote on content that other users have submitted. To help police the site and prevent spammers from bombarding readers, Reddit came
+    up with “karma” points. Users get karma by their comments and links being up-voted by others in the community.</p>
+<br>
+<h5>Objectives</h5>
+<p>The idea of our project is to scrape the data from IMDb and Reddit, and form an analysis that will help users or viewers to view the ratings and comments for this specific Korean drama, Start-Up.</p>
+<ol>
+    <li>Extract and visualise the rating of each episode.</li>
+    <li>Extract and visualise the overall user ratings.</li>
+    <li>Extract and visualise the rating by demographic.</li>
+    <li>Extract and visualise the comments for each episode by using WordCloud.</li>
+    <li>Extract and visualise the frequently used words in the comments using tri-gram.</li>
+</ol>
+<br>
+<h5>Tools and Methods</h5>
+<ol>
+    <li>Jupyter Notebook</li>
+    <ul>
+        <li> User Ratings
+            <ul>
+                <li>Import all necessary libraries: BeautifulSoup, Seleniu, ChromeDriver, WebDriver, Pandas, Matplotlib and Plotly</li>
+                <li>Get url: https://www.imdb.com/title/tt12867810/</li>
+                <li>Parse HTMl by using BeautifulSoup.</li>
+                <li>Extract data wanted: user ratings.</li>
+                <li>Save extracted data to DataFrame.</li>
+                <li>Remove unwanted characters (non-numerical, string, new lines etc).</li>
+                <li>Save to csv file.</li>
+                <li>Visualise data by using Plotly/Matplotlib.</li>
+        </li>
+        </ul>
+    </ul>
+    <p></p>
+    <ul>
+        <li>Reddit Comments</li>
+        <ul>
+            <li>Import all necessary libraries: csv, request, Pandas, Numpy, Matplotlib, re, nltk (stopwords, wordnet, FreqDist, PorterStemmer, RegexpTokenizer, sent_tokenize, word_tokenize, WordNetLemmatizer), praw, BeautifulSoup, WordCloud, gensim, Collections,
+                sklearn and SpellChecker.</li>
+            <li>Praw: Reddit Web Scraping</li>
+
+            <li>Data scrapping and storing</li>
+            <ol>
+                <li>Query with keyword 'Start-up'</li>
+                <li>Create dictionary for posts and comments</li>
+                <li>Scrap data for top 20 posts sorted by comments</li>
+                <li>Store comments and posts scrapped into csv file</li>
+            </ol>
+            <li>Data cleaning: Lookup post title to identify episode number</li>
+            <li>Replacing words, removing emojis and URLs</li>
+            <li>Remove emoji, URLs, stopwords, punctuations</li>
+            <li>Remove deleted comments</li>
+            <li>Data Visualisation: WordCloud & Tri-gram</li>
+            <li>Save DataFrame to csv</li>
+        </ul>
+    </ul>
+    <p></p>
+    <li>Django Website</li>
+    <ul>
+        <li>admin page: view users and profiles, edit/add/delete users manually.</li>
+        <li>home page: display user posts.</li>
+        <li>about page: overview of the website/mini project 2.</li>
+        <li>visualisation page: data visualisation using Plotly, WordCloud and Tri-gram.</li>
+        <li>users app with register, login, logout, password reset functions.</li>
+        <li>blog app where users will be able to post, delete, edit/update post.</li>
+    </ul>
+    <p></p>
+    <li>Github</li>
+</ol>
+
+<br>
+<h5>References</h5>
+<ol>
+    <li><a href="https://www.imdb.com/title/tt12867810/" target="_blank" style="color:#000000;">IMDb Start-Up Korean Drama</a></li>
+    <li><a href="https://towardsdatascience.com/exploring-movie-data-with-interactive-visualizations-c22e8ce5f663" target="_blank" style="color:#000000;">Exploring Movie Data with Interactive Visualizations</a></li>
+    <li><a href="https://towardsdatascience.com/10-viz-every-ds-should-know-4e4118f26fc3" target="_blank" style="color:#000000;">10 Visualizations Every Data Scientist Should Know</a></li>
+    <li>
+        <a href="https://medium.com/swlh/scraping-reddit-using-python-57e61e322486" target="_blank" style="color:#000000;">Scraping Reddit using python</a>
+    </li>
+    <li>
+        <a href="https://medium.com/biaslyai/beginners-guide-to-text-preprocessing-in-python-2cbeafbf5f44" target="_blank" style="color:#000000;">Beginner’s Guide to Text Preprocessing in Python</a>
+    </li>
+    <li>
+        <a href="https://stackoverflow.com/questions/37443138/python-stemming-with-pandas-dataframe" target="_blank" style="color:#000000;">Python Stemming (with pandas dataframe)</a>
+    </li>
+    <li>
+        <a href="https://pythonhealthcare.org/2018/12/14/101-pre-processing-data-tokenization-stemming-and-removal-of-stop-words/" target="_blank" style="color:#000000;">101: Pre-processing data: tokenization, stemming, and removal of stop words</a>
+    </li>
+    <li>
+        <a href="https://praw.readthedocs.io/en/latest/index.html" target="_blank" style="color:#000000;">PRAW: The Python Reddit API Wrapper</a>
+    </li>
+    <li>
+        <a href="https://opensource.com/article/20/8/nlp-python-nltk" target="_blank" style="color:#000000;">An advanced guide to NLP analysis with Python and NLTK</a>
+    </li>
+    <li>
+        <a href="https://towardsdatascience.com/text-classification-using-word-similarity-2f0c5fc9f365" target="_blank" style="color:#000000;">Text Classification using Word Similarity</a>
+    </li>
+    <li>
+        <a href="https://medium.com/@acrosson/extracting-names-emails-and-phone-numbers-5d576354baa" target="_blank" style="color:#000000;">Extracting names, emails and phone numbers</a>
+    </li>
+    <li><a href="https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p" target="_blank" style="color:#000000;">Python Django Tutorial</a></li>
+    <li><a href="https://towardsdatascience.com/making-beautiful-visualizations-for-a-django-html-page-using-plotly-f4e97d3f6bc7" target="_blank" style="color:#000000;">Making beautiful visualizations for a Django HTML page using Plotly</a></li>
+</ol>
+{% endblock content%}
